@@ -2,10 +2,11 @@
 
 namespace App\Controller;
 
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-class QuestionController
+class QuestionController extends AbstractController
 {
     /**
      * @Route("/homepage")
@@ -20,7 +21,18 @@ class QuestionController
      */
     public function show($slug): Response
     {
-        $slug = ucwords(str_replace('-', ' ', $slug));
-        return new Response("Again fuck you ".$slug);
+        // generate some fake text
+        $answers = [
+            'yep',
+            'yep',
+            'yep'
+        ];
+        return $this->render("question/show.html.twig",[
+            'question' => ucwords(str_replace('-', ' ', $slug)),
+            'answers' => $answers
+
+        ]);
+//        $slug = ucwords(str_replace('-', ' ', $slug));
+//        return new Response("Again fuck you ".$slug);
     }
 }
