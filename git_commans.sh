@@ -2,6 +2,8 @@
 
 # List of conflicting files
 files=(
+".DS_Store"
+".env"
 ".gitignore"
 ".idea/cauldron_overflow.iml"
 ".idea/codeception.xml"
@@ -20,6 +22,18 @@ files=(
 "config/packages/twig.yaml"
 "config/services.yaml"
 "public/index.php"
+"README.md"
+"assets/js/app.js"
+"public/build/app.css"
+"public/build/app.js"
+"src/Controller/QuestionController.php"
+"src/DataFixtures/AppFixtures.php"
+"src/Entity/Question.php"
+"src/Factory/QuestionFactory.php"
+"symfony.lock"
+"templates/base.html.twig"
+"templates/question/homepage.html.twig"
+"templates/question/show.html.twig"
 )
 
 # Loop through the list of files and run the commands

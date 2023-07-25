@@ -42,17 +42,17 @@ __webpack_require__.r(__webpack_exports__);
  * Simple (ugly) code to handle the comment vote up/down
  */
 
-// var $container = jquery__WEBPACK_IMPORTED_MODULE_2___default()('.js-vote-arrows');
-// $container.find('button').on('click', function (e) {
-//   e.preventDefault();
-//   var $button = jquery__WEBPACK_IMPORTED_MODULE_2___default()(e.currentTarget);
-//   jquery__WEBPACK_IMPORTED_MODULE_2___default.a.ajax({
-//     url: '/comments/10/vote/' + $button.val(),
-//     method: 'POST'
-//   }).then(function (data) {
-//     $container.find('.js-vote-total').text(data.votes);
-//   });
-// });
+var $container = jquery__WEBPACK_IMPORTED_MODULE_2___default()('.js-vote-arrows');
+$container.find('button').on('click', function (e) {
+  e.preventDefault();
+  var $button = jquery__WEBPACK_IMPORTED_MODULE_2___default()(e.currentTarget);
+  jquery__WEBPACK_IMPORTED_MODULE_2___default.a.ajax({
+    url: '/comments/10/vote/' + $button.val(),
+    method: 'POST'
+  }).then(function (data) {
+    $container.find('.js-vote-total').text(data.votes);
+  });
+});
 
 /***/ })
 

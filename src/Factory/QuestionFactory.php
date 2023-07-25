@@ -10,33 +10,16 @@ use Zenstruck\Foundry\ModelFactory;
 use Zenstruck\Foundry\Proxy;
 
 /**
- * @extends ModelFactory<Question>
- *
- * @method static Question|Proxy createOne(array $attributes = [])
- * @method static Question[]|Proxy[] createMany(int $number, array|callable $attributes = [])
- * @method static Question[]|Proxy[] createSequence(array|callable $sequence)
- * @method static Question|Proxy find(object|array|mixed $criteria)
  * @method static Question|Proxy findOrCreate(array $attributes)
- * @method static Question|Proxy first(string $sortedField = 'id')
- * @method static Question|Proxy last(string $sortedField = 'id')
- * @method static Question|Proxy random(array $attributes = [])
- * @method static Question|Proxy randomOrCreate(array $attributes = [])
- * @method static Question[]|Proxy[] all()
- * @method static Question[]|Proxy[] findBy(array $attributes)
- * @method static Question[]|Proxy[] randomSet(int $number, array $attributes = [])
- * @method static Question[]|Proxy[] randomRange(int $min, int $max, array $attributes = [])
+ * @method static Question|Proxy random()
+ * @method static Question[]|Proxy[] randomSet(int $number)
+ * @method static Question[]|Proxy[] randomRange(int $min, int $max)
  * @method static QuestionRepository|RepositoryProxy repository()
- * @method Question|Proxy create(array|callable $attributes = [])
+ * @method Question|Proxy create($attributes = [])
+ * @method Question[]|Proxy[] createMany(int $number, $attributes = [])
  */
 final class QuestionFactory extends ModelFactory
 {
-    public function __construct()
-    {
-        parent::__construct();
-
-        // TODO inject services if required (https://symfony.com/bundles/ZenstruckFoundryBundle/current/index.html#factories-as-services)
-    }
-
     public function unpublished(): self
     {
         return $this->addState(['askedAt' => null]);
@@ -50,23 +33,17 @@ final class QuestionFactory extends ModelFactory
                 self::faker()->numberBetween(1, 4),
                 true
             ),
-            'votes' => self::faker()->randomNumber(3),
-            'askedAt' => self::faker()->dateTimeBetween('-100 days', '-1 days')
+            'askedAt' => self::faker()->dateTimeBetween('-100 days', '-1 minute'),
+            'votes' => rand(-20, 50),
         ];
-
     }
 
     protected function initialize(): self
     {
-        // see https://symfony.com/bundles/ZenstruckFoundryBundle/current/index.html#initialization
+        // see https://github.com/zenstruck/foundry#initialization
         return $this
-//             ->afterInstantiate(function(Question $question) {
-//                 if (!$question->getSlug()){
-//                     $slugger = new AsciiSlugger();
-//                     $question->setSlug($slugger->slug($question->getName()));
-//                 }
-//             })
-            ;
+            //->afterInstantiate(function(Question $question) { });
+        ;
     }
 
     protected static function getClass(): string
