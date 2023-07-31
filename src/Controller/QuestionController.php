@@ -41,22 +41,8 @@ class QuestionController extends AbstractController
      */
     public function new(EntityManagerInterface $entityManager)
     {
-        $question = new Question();
-$question->setName('Missing pants')
-            ->setSlug('missing-pants-'.rand(0, 1000))
-            ->setQuestion(<<<EOF
-Hi! So... I'm having a *weird* day. Yesterday, I cast a spell
-EOF
-            )
-            ->setAskedAt(new \DateTime(sprintf('-%d days', rand(1, 100))))
-            ->setVotes(rand(-20, 50));
-
-        $entityManager->persist($question);
-        $entityManager->flush();
         return new Response(sprintf(
-            'Well hallo! The shiny new question is id #%d, slug %s',
-            $question->getId(),
-            $question->getSlug()
+            'yep new',
         ));
     }
 

@@ -1,20 +1,20 @@
 {
-  "_readme": [
-    "This file locks the dependencies of your project to a known state",
-    "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
-    "This file is @generated automatically"
-  ],
-  "content-hash": "d28be26e9f90eac95b0448aa7c7d9050",
-  "packages": [
-    {
-      "name": "behat/transliterator",
-      "version": "v1.3.0",
-      "source": {
-        "type": "git",
-        "url": "https://github.com/Behat/Transliterator.git",
-        "reference": "3c4ec1d77c3d05caa1f0bf8fb3aae4845005c7fc"
-      },
-      "dist": {
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "a21fe4116755f2fb7733375d50338abf",
+    "packages": [
+        {
+            "name": "behat/transliterator",
+            "version": "v1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Behat/Transliterator.git",
+                "reference": "3c4ec1d77c3d05caa1f0bf8fb3aae4845005c7fc"
+            },
+            "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/Behat/Transliterator/zipball/3c4ec1d77c3d05caa1f0bf8fb3aae4845005c7fc",
                 "reference": "3c4ec1d77c3d05caa1f0bf8fb3aae4845005c7fc",
@@ -89,10 +89,10 @@
                 "MIT"
             ],
             "authors": [
-              {
-                "name": "Christian Lück",
-                "email": "christian@clue.engineering"
-              }
+                {
+                    "name": "Christian Lück",
+                    "email": "christian@clue.engineering"
+                }
             ],
             "description": "A simple and modern approach to stream filtering in PHP",
             "homepage": "https://github.com/clue/php-stream-filter",
@@ -2500,10 +2500,10 @@
                 "MIT"
             ],
             "authors": [
-              {
-                "name": "Márk Sági-Kazár",
-                "email": "mark.sagikazar@gmail.com"
-              }
+                {
+                    "name": "Márk Sági-Kazár",
+                    "email": "mark.sagikazar@gmail.com"
+                }
             ],
             "description": "Common HTTP Client implementations and tools for HTTPlug",
             "homepage": "http://httplug.io",
@@ -2566,10 +2566,10 @@
                 "MIT"
             ],
             "authors": [
-              {
-                "name": "Márk Sági-Kazár",
-                "email": "mark.sagikazar@gmail.com"
-              }
+                {
+                    "name": "Márk Sági-Kazár",
+                    "email": "mark.sagikazar@gmail.com"
+                }
             ],
             "description": "Finds installed HTTPlug implementations and PSR-7 message factories",
             "homepage": "http://php-http.org",
@@ -2632,11 +2632,11 @@
                     "name": "Eric GELOEN",
                     "email": "geloen.eric@gmail.com"
                 },
-              {
-                "name": "Márk Sági-Kazár",
-                "email": "mark.sagikazar@gmail.com",
-                "homepage": "https://sagikazarmark.hu"
-              }
+                {
+                    "name": "Márk Sági-Kazár",
+                    "email": "mark.sagikazar@gmail.com",
+                    "homepage": "https://sagikazarmark.hu"
+                }
             ],
             "description": "HTTPlug, the HTTP client abstraction for PHP",
             "homepage": "http://httplug.io",
@@ -2706,10 +2706,10 @@
                 "MIT"
             ],
             "authors": [
-              {
-                "name": "Márk Sági-Kazár",
-                "email": "mark.sagikazar@gmail.com"
-              }
+                {
+                    "name": "Márk Sági-Kazár",
+                    "email": "mark.sagikazar@gmail.com"
+                }
             ],
             "description": "HTTP Message related tools",
             "homepage": "http://php-http.org",
@@ -2758,10 +2758,10 @@
                 "MIT"
             ],
             "authors": [
-              {
-                "name": "Márk Sági-Kazár",
-                "email": "mark.sagikazar@gmail.com"
-              }
+                {
+                    "name": "Márk Sági-Kazár",
+                    "email": "mark.sagikazar@gmail.com"
+                }
             ],
             "description": "Factory interfaces for PSR-7 HTTP Message",
             "homepage": "http://php-http.org",
@@ -2819,10 +2819,10 @@
                     "name": "Joel Wurtz",
                     "email": "joel.wurtz@gmail.com"
                 },
-              {
-                "name": "Márk Sági-Kazár",
-                "email": "mark.sagikazar@gmail.com"
-              }
+                {
+                    "name": "Márk Sági-Kazár",
+                    "email": "mark.sagikazar@gmail.com"
+                }
             ],
             "description": "Promise used for asynchronous HTTP requests",
             "homepage": "http://httplug.io",
@@ -6052,10 +6052,10 @@
                 "MIT"
             ],
             "authors": [
-              {
-                "name": "Grégoire Pineau",
-                "email": "lyrixx@lyrixx.info"
-              },
+                {
+                    "name": "Grégoire Pineau",
+                    "email": "lyrixx@lyrixx.info"
+                },
                 {
                     "name": "Symfony Community",
                     "homepage": "https://symfony.com/contributors"
@@ -7549,38 +7549,38 @@
             ],
             "time": "2021-01-23T10:20:43+00:00"
         },
-      {
-        "name": "doctrine/doctrine-fixtures-bundle",
-        "version": "3.4.4",
-        "source": {
-          "type": "git",
-          "url": "https://github.com/doctrine/DoctrineFixturesBundle.git",
-          "reference": "9ec3139c52a42e94c9fd1e95f8d2bca94326edfb"
-        },
-        "dist": {
-          "type": "zip",
-          "url": "https://api.github.com/repos/doctrine/DoctrineFixturesBundle/zipball/9ec3139c52a42e94c9fd1e95f8d2bca94326edfb",
-          "reference": "9ec3139c52a42e94c9fd1e95f8d2bca94326edfb",
-          "shasum": ""
-        },
+        {
+            "name": "doctrine/doctrine-fixtures-bundle",
+            "version": "3.4.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/doctrine/DoctrineFixturesBundle.git",
+                "reference": "9ec3139c52a42e94c9fd1e95f8d2bca94326edfb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/doctrine/DoctrineFixturesBundle/zipball/9ec3139c52a42e94c9fd1e95f8d2bca94326edfb",
+                "reference": "9ec3139c52a42e94c9fd1e95f8d2bca94326edfb",
+                "shasum": ""
+            },
             "require": {
-              "doctrine/data-fixtures": "^1.3",
-              "doctrine/doctrine-bundle": "^1.11|^2.0",
-              "doctrine/orm": "^2.6.0",
-              "doctrine/persistence": "^1.3.7|^2.0|^3.0",
-              "php": "^7.1 || ^8.0",
-              "symfony/config": "^3.4|^4.3|^5.0|^6.0",
-              "symfony/console": "^3.4|^4.3|^5.0|^6.0",
-              "symfony/dependency-injection": "^3.4.47|^4.3|^5.0|^6.0",
-              "symfony/doctrine-bridge": "^3.4|^4.1|^5.0|^6.0",
-              "symfony/http-kernel": "^3.4|^4.3|^5.0|^6.0"
+                "doctrine/data-fixtures": "^1.3",
+                "doctrine/doctrine-bundle": "^1.11|^2.0",
+                "doctrine/orm": "^2.6.0",
+                "doctrine/persistence": "^1.3.7|^2.0|^3.0",
+                "php": "^7.1 || ^8.0",
+                "symfony/config": "^3.4|^4.3|^5.0|^6.0",
+                "symfony/console": "^3.4|^4.3|^5.0|^6.0",
+                "symfony/dependency-injection": "^3.4.47|^4.3|^5.0|^6.0",
+                "symfony/doctrine-bridge": "^3.4|^4.1|^5.0|^6.0",
+                "symfony/http-kernel": "^3.4|^4.3|^5.0|^6.0"
             },
             "require-dev": {
-              "doctrine/coding-standard": "^9",
-              "phpstan/phpstan": "^1.4.10",
-              "phpunit/phpunit": "^7.5.20 || ^8.5.26 || ^9.5.20",
-              "symfony/phpunit-bridge": "^6.0.8",
-              "vimeo/psalm": "^4.22"
+                "doctrine/coding-standard": "^9",
+                "phpstan/phpstan": "^1.4.10",
+                "phpunit/phpunit": "^7.5.20 || ^8.5.26 || ^9.5.20",
+                "symfony/phpunit-bridge": "^6.0.8",
+                "vimeo/psalm": "^4.22"
             },
             "type": "symfony-bundle",
             "autoload": {
@@ -7597,27 +7597,27 @@
                     "name": "Fabien Potencier",
                     "email": "fabien@symfony.com"
                 },
-              {
-                "name": "Doctrine Project",
-                "homepage": "https://www.doctrine-project.org"
-              },
-              {
-                "name": "Symfony Community",
-                "homepage": "https://symfony.com/contributors"
-              }
+                {
+                    "name": "Doctrine Project",
+                    "homepage": "https://www.doctrine-project.org"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
             ],
-        "description": "Symfony DoctrineFixturesBundle",
-        "homepage": "https://www.doctrine-project.org",
-        "keywords": [
-          "Fixture",
-          "persistence"
-        ],
-        "support": {
-          "issues": "https://github.com/doctrine/DoctrineFixturesBundle/issues",
-          "source": "https://github.com/doctrine/DoctrineFixturesBundle/tree/3.4.4"
-        },
-        "funding": [
-          {
+            "description": "Symfony DoctrineFixturesBundle",
+            "homepage": "https://www.doctrine-project.org",
+            "keywords": [
+                "Fixture",
+                "persistence"
+            ],
+            "support": {
+                "issues": "https://github.com/doctrine/DoctrineFixturesBundle/issues",
+                "source": "https://github.com/doctrine/DoctrineFixturesBundle/tree/3.4.4"
+            },
+            "funding": [
+                {
                     "url": "https://www.doctrine-project.org/sponsorship.html",
                     "type": "custom"
                 },
@@ -7630,7 +7630,7 @@
                     "type": "tidelift"
                 }
             ],
-        "time": "2023-05-02T15:12:16+00:00"
+            "time": "2023-05-02T15:12:16+00:00"
         },
         {
             "name": "fakerphp/faker",
@@ -7669,7 +7669,7 @@
             ],
             "authors": [
                 {
-                  "name": "François Zaninotto"
+                    "name": "François Zaninotto"
                 }
             ],
             "description": "Faker is a PHP library that generates fake data for you.",
@@ -7988,6 +7988,85 @@
             "time": "2020-10-28T15:35:16+00:00"
         },
         {
+            "name": "symfony/polyfill-php81",
+            "version": "v1.27.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-php81.git",
+                "reference": "707403074c8ea6e2edaf8794b0157a0bfa52157a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-php81/zipball/707403074c8ea6e2edaf8794b0157a0bfa52157a",
+                "reference": "707403074c8ea6e2edaf8794b0157a0bfa52157a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "1.27-dev"
+                },
+                "thanks": {
+                    "name": "symfony/polyfill",
+                    "url": "https://github.com/symfony/polyfill"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "bootstrap.php"
+                ],
+                "psr-4": {
+                    "Symfony\\Polyfill\\Php81\\": ""
+                },
+                "classmap": [
+                    "Resources/stubs"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony polyfill backporting some PHP 8.1+ features to lower PHP versions",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "compatibility",
+                "polyfill",
+                "portable",
+                "shim"
+            ],
+            "support": {
+                "source": "https://github.com/symfony/polyfill-php81/tree/v1.27.0"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2022-11-03T14:55:06+00:00"
+        },
+        {
             "name": "symfony/property-access",
             "version": "v5.1.2",
             "source": {
@@ -8129,10 +8208,10 @@
                 "MIT"
             ],
             "authors": [
-              {
-                "name": "Kévin Dunglas",
-                "email": "dunglas@gmail.com"
-              },
+                {
+                    "name": "Kévin Dunglas",
+                    "email": "dunglas@gmail.com"
+                },
                 {
                     "name": "Symfony Community",
                     "homepage": "https://symfony.com/contributors"
@@ -8250,48 +8329,170 @@
             "time": "2020-06-09T11:33:28+00:00"
         },
         {
-            "name": "zenstruck/foundry",
-            "version": "v1.5.0",
+            "name": "zenstruck/assert",
+            "version": "v1.2.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/zenstruck/foundry.git",
-                "reference": "8364424c7d2420e7aeea7263664ecf9643f00d7a"
+                "url": "https://github.com/zenstruck/assert.git",
+                "reference": "a1c6501c975339ded3bcf8092a17277f6e21ac82"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zenstruck/foundry/zipball/8364424c7d2420e7aeea7263664ecf9643f00d7a",
-                "reference": "8364424c7d2420e7aeea7263664ecf9643f00d7a",
+                "url": "https://api.github.com/repos/zenstruck/assert/zipball/a1c6501c975339ded3bcf8092a17277f6e21ac82",
+                "reference": "a1c6501c975339ded3bcf8092a17277f6e21ac82",
                 "shasum": ""
             },
             "require": {
-                "doctrine/persistence": "^1.3.3|^2.0",
-                "fakerphp/faker": "^1.5",
                 "php": ">=7.2.5",
-                "symfony/deprecation-contracts": "^2.2",
-                "symfony/property-access": "^3.4|^4.4|^5.0"
+                "symfony/polyfill-php73": "^1.8",
+                "symfony/polyfill-php80": "^1.15",
+                "symfony/polyfill-php81": "^1.23"
             },
             "require-dev": {
-                "dama/doctrine-test-bundle": "^6.0",
+                "phpstan/phpstan": "^1.4",
+                "symfony/phpunit-bridge": "^5.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Zenstruck\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kevin Bond",
+                    "email": "kevinbond@gmail.com"
+                }
+            ],
+            "description": "Standalone, lightweight, framework agnostic, test assertion library.",
+            "homepage": "https://github.com/zenstruck/assert",
+            "keywords": [
+                "assertion",
+                "phpunit",
+                "test"
+            ],
+            "support": {
+                "issues": "https://github.com/zenstruck/assert/issues",
+                "source": "https://github.com/zenstruck/assert/tree/v1.2.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/kbond",
+                    "type": "github"
+                }
+            ],
+            "time": "2022-07-12T12:30:27+00:00"
+        },
+        {
+            "name": "zenstruck/callback",
+            "version": "v1.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zenstruck/callback.git",
+                "reference": "eed9a532fd8974368e60c4a2550ed65eab7e5432"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zenstruck/callback/zipball/eed9a532fd8974368e60c4a2550ed65eab7e5432",
+                "reference": "eed9a532fd8974368e60c4a2550ed65eab7e5432",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2.5",
+                "symfony/polyfill-php80": "^1.14"
+            },
+            "require-dev": {
+                "symfony/phpunit-bridge": "^5.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Zenstruck\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kevin Bond",
+                    "email": "kevinbond@gmail.com"
+                }
+            ],
+            "description": "Callable wrapper to validate and inject arguments.",
+            "homepage": "https://github.com/zenstruck/callback",
+            "keywords": [
+                "callable",
+                "callback",
+                "utility"
+            ],
+            "support": {
+                "issues": "https://github.com/zenstruck/callback/issues",
+                "source": "https://github.com/zenstruck/callback/tree/v1.5.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/kbond",
+                    "type": "github"
+                }
+            ],
+            "time": "2022-08-31T14:56:15+00:00"
+        },
+        {
+            "name": "zenstruck/foundry",
+            "version": "v1.23.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zenstruck/foundry.git",
+                "reference": "a3f3cdb397c70237ca743192aaeb4a4407f7e1d3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zenstruck/foundry/zipball/a3f3cdb397c70237ca743192aaeb4a4407f7e1d3",
+                "reference": "a3f3cdb397c70237ca743192aaeb4a4407f7e1d3",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/persistence": "^1.3.3|^2.0|^3.0",
+                "fakerphp/faker": "^1.5",
+                "php": ">=7.2.12",
+                "symfony/deprecation-contracts": "^2.2|^3.0",
+                "symfony/property-access": "^3.4|^4.4|^5.0|^6.0",
+                "zenstruck/assert": "^1.0",
+                "zenstruck/callback": "^1.1"
+            },
+            "require-dev": {
+                "bamarni/composer-bin-plugin": "^1.4",
+                "dama/doctrine-test-bundle": "^6.0|^7.0",
                 "doctrine/doctrine-bundle": "^2.0",
+                "doctrine/doctrine-migrations-bundle": "^2.2|^3.0",
+                "doctrine/mongodb-odm-bundle": "^3.1|^4.2",
                 "doctrine/orm": "^2.7",
                 "matthiasnoback/symfony-dependency-injection-test": "^4.1",
-                "symfony/framework-bundle": "^4.4|^5.0",
-                "symfony/maker-bundle": "^1.13",
-                "symfony/phpunit-bridge": "^5.1"
+                "symfony/framework-bundle": "^4.4|^5.0|^6.0",
+                "symfony/maker-bundle": "^1.30",
+                "symfony/phpunit-bridge": "^6.0"
             },
             "type": "library",
             "extra": {
-                "branch-alias": {
-                    "dev-master": "1.x-dev"
+                "bamarni-bin": {
+                    "target-directory": "bin/tools",
+                    "bin-links": true,
+                    "forward-command": false
                 }
             },
             "autoload": {
-                "psr-4": {
-                    "Zenstruck\\Foundry\\": "src/"
-                },
                 "files": [
                     "src/functions.php"
-                ]
+                ],
+                "psr-4": {
+                    "Zenstruck\\Foundry\\": "src/"
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -8315,9 +8516,15 @@
             ],
             "support": {
                 "issues": "https://github.com/zenstruck/foundry/issues",
-                "source": "https://github.com/zenstruck/foundry/tree/v1.5.0"
+                "source": "https://github.com/zenstruck/foundry/tree/v1.23.0"
             },
-            "time": "2020-11-10T13:47:18+00:00"
+            "funding": [
+                {
+                    "url": "https://github.com/kbond",
+                    "type": "github"
+                }
+            ],
+            "time": "2022-11-10T18:43:03+00:00"
         }
     ],
     "aliases": [],
@@ -8331,5 +8538,5 @@
         "ext-iconv": "*"
     },
     "platform-dev": [],
-  "plugin-api-version": "2.3.0"
+    "plugin-api-version": "2.3.0"
 }
