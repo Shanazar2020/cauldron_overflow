@@ -60,13 +60,13 @@ final class QuestionFactory extends ModelFactory
     {
         // see https://symfony.com/bundles/ZenstruckFoundryBundle/current/index.html#initialization
         return $this
-            ->afterInstantiate(function (Question $question) {
-                if (!$question->getSlug()) {
-                    $slugger = new AsciiSlugger();
-                    $question->setSlug($slugger->slug($question->getName()));
-                }
-            })
-        ;
+//             ->afterInstantiate(function(Question $question) {
+//                 if (!$question->getSlug()){
+//                     $slugger = new AsciiSlugger();
+//                     $question->setSlug($slugger->slug($question->getName()));
+//                 }
+//             })
+            ;
     }
 
     protected static function getClass(): string
