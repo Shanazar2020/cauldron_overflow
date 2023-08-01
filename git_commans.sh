@@ -34,6 +34,9 @@ files=(
 "templates/base.html.twig"
 "templates/question/homepage.html.twig"
 "templates/question/show.html.twig"
+"src/Entity/Answer.php"
+#"src/Entity/Comment.php"
+"src/Repository/AnswerRepository.php"
 )
 
 # Loop through the list of files and run the commands
