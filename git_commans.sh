@@ -37,6 +37,7 @@ files=(
 "src/Entity/Answer.php"
 #"src/Entity/Comment.php"
 "src/Repository/AnswerRepository.php"
+"src/Factory/AnswerFactory.php"
 )
 
 # Loop through the list of files and run the commands
