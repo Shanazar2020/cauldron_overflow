@@ -181,6 +181,7 @@ fabric.properties
 !.yarn/plugins
 !.yarn/sdks
 !.yarn/versions
+/docker/*
 
 # if you are NOT using Zero-installs, then:
 # comment the following lines
