@@ -7,7 +7,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\Routing\Annotation\Route;
 
-class CommentController extends AbstractController
+class AnswerController extends AbstractController
 {
     /**
      * @Route("/comments/{id}/vote/{direction<up|down>}", methods="POST")
