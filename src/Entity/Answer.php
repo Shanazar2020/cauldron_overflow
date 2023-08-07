@@ -94,4 +94,22 @@ class Answer
 
         return $this;
     }
+
+    public function voteUp(): self
+    {
+        $this->votes += 1;
+        return $this;
+    }
+
+    public function voteDown(): self
+    {
+        $this->votes -= 1;
+        return $this;
+    }
+
+    public function getVotesString(): string
+    {
+        $prefix = $this->getVotes() >= 0 ? '+' : '-';
+        return sprintf('%s %d', $prefix, abs($this->getVotes()));
+    }
 }
