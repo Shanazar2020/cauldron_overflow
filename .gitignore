@@ -190,3 +190,15 @@ fabric.properties
 # .pnp.*
 
 # End of https://www.toptal.com/developers/gitignore/api/symfony,phpstorm,yarn
+
+
+# docker
+
+./docker/mysql/*
+
+# Except this file
+!./docker/mysql/.gitignore
+# Except subfolder1
+!./docker/mysql/mysql/
+!./docker/root/
+!./docker/sys/
