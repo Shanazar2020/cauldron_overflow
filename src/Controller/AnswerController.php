@@ -17,7 +17,6 @@ class AnswerController extends AbstractController
      */
     public function answerVote($id, LoggerInterface $logger, Request $request, AnswerRepository $answerRepository, EntityManagerInterface $entityManager): JsonResponse
     {
-        dd($id, $request);
         $data = json_decode($request->getContent(), true);
         $direction = $data['direction'] ?? 'up';
 
