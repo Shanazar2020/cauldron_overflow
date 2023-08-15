@@ -2,11 +2,11 @@
 
 namespace App\Controller;
 
+use App\Entity\Answer;
 use App\Repository\AnswerRepository;
 use Doctrine\ORM\EntityManagerInterface;
 use Psr\Log\LoggerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
-use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Annotation\Route;
 
@@ -15,12 +15,10 @@ class AnswerController extends AbstractController
     /**
      * @Route("/answers/{id}/vote", methods="POST", name="answer_vote")
      */
-    public function answerVote($id, LoggerInterface $logger, Request $request, AnswerRepository $answerRepository, EntityManagerInterface $entityManager): JsonResponse
+    public function answerVote(Answer $answer, LoggerInterface $logger, Request $request, AnswerRepository $answerRepository, EntityManagerInterface $entityManager)
     {
-        $data = json_decode($request->getContent(), true);
+        $data = $request->request->all();
         $direction = $data['direction'] ?? 'up';
-
-        $answer = $answerRepository->find($id);
 
         // use real logic here to save this to the database
         if ($direction === 'up') {
@@ -33,6 +31,8 @@ class AnswerController extends AbstractController
 
         $entityManager->flush();
 
-        return $this->json(['votes' => $answer->getVotesString()]);
+        return $this->redirectToRoute('app_question_show', [
+            'slug' => $answer->getQuestion()->getSlug()
+        ]);
     }
 }
