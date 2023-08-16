@@ -23,6 +23,9 @@ class AppFixtures extends Fixture
                 ];
             });
 
+        AnswerFactory::new()->needsApproval()->many(20)->create();
+
+
         $manager->flush();
     }
 }

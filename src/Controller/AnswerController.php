@@ -35,4 +35,16 @@ class AnswerController extends AbstractController
             'slug' => $answer->getQuestion()->getSlug()
         ]);
     }
+
+    /**
+     * @Route("/answers/popular", name="app_popular_answers", methods="GET")
+     */
+    public function popularAnswers(AnswerRepository $answerRepository)
+    {
+        $answers = $answerRepository->findMostPopular();
+        return $this->render("answer/popularAnswers.html.twig", [
+            'answers' => $answers
+        ]);
+    }
+
 }

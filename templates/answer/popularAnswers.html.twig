@@ -4,6 +4,7 @@
 
 {% block body %}
     <div class="container my-md-4">
+<<<<<<< HEAD
         <div class="d-flex justify-content-between">
             <h1>Most Popular Answers</h1>
 
@@ -27,5 +28,18 @@
                 }) }}
             {% endfor %}
         </ul>
+=======
+        <div class="row">
+            <h1>Most Popular Answers</h1>
+
+            <ul class="list-unstyled">
+                {% for answer in answers %}
+                    {{ include('answer/_answer.html.twig', {
+                        showQuestion: true
+                    }) }}
+                {% endfor %}
+            </ul>
+        </div>
+>>>>>>> c25f4a5 (feature: popular answers page)
     </div>
 {% endblock %}

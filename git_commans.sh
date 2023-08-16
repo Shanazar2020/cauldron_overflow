@@ -35,14 +35,16 @@ files=(
 "templates/question/homepage.html.twig"
 "templates/question/show.html.twig"
 "src/Entity/Answer.php"
-#"src/Entity/Comment.php"
 "src/Repository/AnswerRepository.php"
 "src/Factory/AnswerFactory.php"
 "src/Controller/AnswerController.php"
+"templates/answer/_answer.html.twig"
+"templates/answer/popularAnswers.html.twig"
 )
 
 # Loop through the list of files and run the commands
 for file in "${files[@]}"; do
   git checkout --theirs "$file"
   git add "$file"
+git add .
 done
