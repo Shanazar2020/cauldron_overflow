@@ -14,14 +14,12 @@ class AppFixtures extends Fixture
 {
     public function load(ObjectManager $manager)
     {
-        $tags = TagFactory::createMany(100);
+        TagFactory::createMany(100);
 
-        $questions = QuestionFactory::new()->createMany(20, function () use ($tags) {
-            $random_tags = array();
-            for ($i = 0; $i < rand(1, 5); $i++) {
-                $random_tags[] = $tags[array_rand($tags)];
-            }
-            return ['tags' => $random_tags];
+        $questions = QuestionFactory::new()->createMany(20, function () {
+            return [
+                'tags' => TagFactory::randomRange(2, 5)
+            ];
         });
 
         QuestionFactory::new()->unpublished()->createMany(5);

@@ -11,7 +11,7 @@ services:
       # See https://docs.docker.com/compose/compose-file/#ports for more information.
       - '3306:3306'
     volumes:
-      - ../docker/mysql:/var/lib/mymysql
+      - ../docker/volume:/var/lib/mysql
     networks:
       - frontend
       - backend
