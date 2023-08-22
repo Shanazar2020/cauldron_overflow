@@ -20,19 +20,16 @@ class QuestionRepository extends ServiceEntityRepository
         parent::__construct($registry, Question::class);
     }
 
-     /**
-      * @return Question[] Returns an array of Question objects
-      */
-    public function findAllAskedOrderedByNewest()
+    /**
+     * @return QueryBuilder Returns an array of Question objects
+     */
+    public function createAskedOrderedByNewestQueryBuilder(): QueryBuilder
     {
         return $this->addIsAskedQueryBuilder()
             ->orderBy('q.askedAt', 'DESC')
             ->leftJoin('q.questionTags', 'question_tag')
             ->innerJoin('question_tag.tag', 'tag')
-            ->addSelect(['question_tag', 'tag'])
-            ->getQuery()
-            ->getResult()
-        ;
+            ->addSelect(['question_tag', 'tag']);
     }
 
     private function addIsAskedQueryBuilder(QueryBuilder $qb = null): QueryBuilder
@@ -45,16 +42,4 @@ class QuestionRepository extends ServiceEntityRepository
     {
         return $qb ?: $this->createQueryBuilder('q');
     }
-
-    /*
-    public function findOneBySomeField($value): ?Question
-    {
-        return $this->createQueryBuilder('q')
-            ->andWhere('q.exampleField = :val')
-            ->setParameter('val', $value)
-            ->getQuery()
-            ->getOneOrNullResult()
-        ;
-    }
-    */
 }

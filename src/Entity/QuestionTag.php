@@ -30,7 +30,7 @@ class QuestionTag
     private $tag;
 
     /**
-     * @ORM\Column(type="datetime_immutable", options={default="CURRENT_TIMESTAMP"})
+     * @ORM\Column(type="datetime_immutable")
      */
     private $taggedAt;
 
