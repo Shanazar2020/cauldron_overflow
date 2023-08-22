@@ -27,15 +27,15 @@ class Tag
      * @ORM\Column(type="string", length=255)
      */
     private $name;
-
-    /**
-     * @ORM\ManyToMany(targetEntity=Question::class, mappedBy="tags")
-     */
-    private $questions;
+//
+//    /**
+//     * @ORM\ManyToMany(targetEntity=Question::class, mappedBy="tags")
+//     */
+//    private $questions;
 
     public function __construct()
     {
-        $this->questions = new ArrayCollection();
+//        $this->questions = new ArrayCollection();
     }
 
     public function getId(): ?int
@@ -54,31 +54,31 @@ class Tag
 
         return $this;
     }
-
-    /**
-     * @return Collection|Question[]
-     */
-    public function getQuestions(): Collection
-    {
-        return $this->questions;
-    }
-
-    public function addQuestion(Question $question): self
-    {
-        if (!$this->questions->contains($question)) {
-            $this->questions[] = $question;
-            $question->addTag($this);
-        }
-
-        return $this;
-    }
-
-    public function removeQuestion(Question $question): self
-    {
-        if ($this->questions->removeElement($question)) {
-            $question->removeTag($this);
-        }
-
-        return $this;
-    }
+//
+//    /**
+//     * @return Collection|Question[]
+//     */
+//    public function getQuestions(): Collection
+//    {
+//        return $this->questions;
+//    }
+//
+//    public function addQuestion(Question $question): self
+//    {
+//        if (!$this->questions->contains($question)) {
+//            $this->questions[] = $question;
+//            $question->addTag($this);
+//        }
+//
+//        return $this;
+//    }
+//
+//    public function removeQuestion(Question $question): self
+//    {
+//        if ($this->questions->removeElement($question)) {
+//            $question->removeTag($this);
+//        }
+//
+//        return $this;
+//    }
 }
