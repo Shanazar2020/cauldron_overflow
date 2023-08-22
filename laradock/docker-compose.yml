@@ -11,7 +11,7 @@ services:
       # See https://docs.docker.com/compose/compose-file/#ports for more information.
       - '3306:3306'
     volumes:
-      - ../docker/mysql:/var/lib/mysql
+      - ../docker/volume:/var/lib/mysql
     networks:
       - frontend
       - backend
@@ -92,6 +92,7 @@ services:
       - DOCKER_CERT_PATH=/certs/client
     networks:
       - backend
+      - frontend
     links:
       - docker-in-docker
 
