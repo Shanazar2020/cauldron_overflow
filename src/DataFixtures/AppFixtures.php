@@ -9,6 +9,7 @@ use App\Factory\AnswerFactory;
 use App\Factory\QuestionFactory;
 use App\Factory\QuestionTagFactory;
 use App\Factory\TagFactory;
+use App\Factory\UserFactory;
 use Doctrine\Bundle\FixturesBundle\Fixture;
 use Doctrine\Persistence\ObjectManager;
 
@@ -39,6 +40,8 @@ class AppFixtures extends Fixture
         AnswerFactory::new()->needsApproval()->many(20)->create();
 
 
+        UserFactory::createOne(['email' => 'abraca_admin@example.com']);
+        UserFactory::createMany(10);
         $manager->flush();
     }
 }

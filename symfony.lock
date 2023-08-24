@@ -1,4 +1,7 @@
 {
+    "babdev/pagerfanta-bundle": {
+        "version": "v3.6.1"
+    },
     "behat/transliterator": {
         "version": "v1.3.0"
     },
@@ -146,6 +149,9 @@
     },
     "ocramius/package-versions": {
         "version": "1.4.2"
+    },
+    "pagerfanta/pagerfanta": {
+        "version": "v3.6.2"
     },
     "php": {
         "version": "7.2.5"
@@ -334,9 +340,6 @@
     "symfony/http-client": {
         "version": "v5.1.11"
     },
-    "symfony/http-client-contracts": {
-        "version": "v2.3.1"
-    },
     "symfony/http-foundation": {
         "version": "v5.0.4"
     },
@@ -378,6 +381,9 @@
     },
     "symfony/orm-pack": {
         "version": "v2.0.0"
+    },
+    "symfony/password-hasher": {
+        "version": "v5.4.27"
     },
     "symfony/polyfill-intl-grapheme": {
         "version": "v1.17.1"
@@ -432,8 +438,29 @@
             "config/routes.yaml"
         ]
     },
+    "symfony/security-bundle": {
+        "version": "5.4",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "main",
+            "version": "5.3",
+            "ref": "98f1f2b0d635908c2b40f3675da2d23b1a069d30"
+        },
+        "files": [
+            "config/packages/security.yaml"
+        ]
+    },
     "symfony/security-core": {
         "version": "v5.0.7"
+    },
+    "symfony/security-csrf": {
+        "version": "v5.4.27"
+    },
+    "symfony/security-guard": {
+        "version": "v5.4.27"
+    },
+    "symfony/security-http": {
+        "version": "v5.4.26"
     },
     "symfony/service-contracts": {
         "version": "v2.0.1"
