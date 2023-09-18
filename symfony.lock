@@ -465,6 +465,20 @@
     "symfony/service-contracts": {
         "version": "v2.0.1"
     },
+    "symfony/stimulus-bundle": {
+        "version": "2.11",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "main",
+            "version": "2.9",
+            "ref": "05c45071c7ecacc1e48f94bc43c1f8d4405fb2b2"
+        },
+        "files": [
+            "assets/bootstrap.js",
+            "assets/controllers.json",
+            "assets/controllers/hello_controller.js"
+        ]
+    },
     "symfony/stopwatch": {
         "version": "v5.0.4"
     },
@@ -504,6 +518,21 @@
             "templates/base.html.twig"
         ]
     },
+    "symfony/ux-chartjs": {
+        "version": "v2.11.0"
+    },
+    "symfony/validator": {
+        "version": "5.4",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "main",
+            "version": "5.3",
+            "ref": "c32cfd98f714894c4f128bb99aa2530c1227603c"
+        },
+        "files": [
+            "config/packages/validator.yaml"
+        ]
+    },
     "symfony/var-dumper": {
         "version": "v5.0.4"
     },
@@ -525,19 +554,16 @@
         ]
     },
     "symfony/webpack-encore-bundle": {
-        "version": "1.6",
+        "version": "2.0",
         "recipe": {
             "repo": "github.com/symfony/recipes",
-            "branch": "master",
-            "version": "1.6",
-            "ref": "69e1d805ad95964088bd510c05995e87dc391564"
+            "branch": "main",
+            "version": "2.0",
+            "ref": "082d754b3bd54b3fc669f278f1eea955cfd23cf5"
         },
         "files": [
-            "assets/css/app.css",
-            "assets/js/app.js",
-            "config/packages/assets.yaml",
-            "config/packages/prod/webpack_encore.yaml",
-            "config/packages/test/webpack_encore.yaml",
+            "assets/app.js",
+            "assets/styles/app.css",
             "config/packages/webpack_encore.yaml",
             "package.json",
             "webpack.config.js"
