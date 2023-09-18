@@ -16,7 +16,7 @@ security:
     firewalls:
         dev:
           pattern: ^/(_(profiler|wdt)|styles|images|js)/
-            security: false
+          security: false
         main:
             lazy: true
             provider: app_user_provider
