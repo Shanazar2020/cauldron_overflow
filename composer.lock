@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-  "content-hash": "397bc34b9d7e716c46d9aae1bef668ff",
+  "content-hash": "cd6a4b652bfa2904946ddfacf6629140",
     "packages": [
         {
             "name": "babdev/pagerfanta-bundle",
@@ -3685,28 +3685,28 @@
         },
         {
             "name": "symfony/flex",
-            "version": "v1.17.5",
+          "version": "v2.3.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/flex.git",
-                "reference": "3f0dc66dcddff035a2ab98ed7e666dfd478b2712"
+              "reference": "9c402af768c6c9f8126a9ffa192ecf7c16581e35"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/flex/zipball/3f0dc66dcddff035a2ab98ed7e666dfd478b2712",
-                "reference": "3f0dc66dcddff035a2ab98ed7e666dfd478b2712",
+              "url": "https://api.github.com/repos/symfony/flex/zipball/9c402af768c6c9f8126a9ffa192ecf7c16581e35",
+              "reference": "9c402af768c6c9f8126a9ffa192ecf7c16581e35",
                 "shasum": ""
             },
             "require": {
-                "composer-plugin-api": "^1.0|^2.0",
-                "php": ">=7.1"
+              "composer-plugin-api": "^2.1",
+              "php": ">=8.0"
             },
             "require-dev": {
-                "composer/composer": "^1.0.2|^2.0",
-                "symfony/dotenv": "^4.4|^5.0|^6.0",
-                "symfony/filesystem": "^4.4|^5.0|^6.0",
-                "symfony/phpunit-bridge": "^4.4.12|^5.0|^6.0",
-                "symfony/process": "^4.4|^5.0|^6.0"
+              "composer/composer": "^2.1",
+              "symfony/dotenv": "^5.4|^6.0",
+              "symfony/filesystem": "^5.4|^6.0",
+              "symfony/phpunit-bridge": "^5.4|^6.0",
+              "symfony/process": "^5.4|^6.0"
             },
             "type": "composer-plugin",
             "extra": {
@@ -3730,7 +3730,7 @@
             "description": "Composer plugin for Symfony",
             "support": {
                 "issues": "https://github.com/symfony/flex/issues",
-                "source": "https://github.com/symfony/flex/tree/v1.17.5"
+              "source": "https://github.com/symfony/flex/tree/v2.3.3"
             },
             "funding": [
                 {
@@ -3746,7 +3746,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-11-23T11:08:47+00:00"
+          "time": "2023-08-04T09:02:35+00:00"
         },
         {
             "name": "symfony/framework-bundle",
@@ -5659,16 +5659,16 @@
         },
         {
             "name": "symfony/stimulus-bundle",
-            "version": "v2.10.0",
+          "version": "v2.11.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/stimulus-bundle.git",
-                "reference": "257ef052bebe491d7c29e9a4a8009edb82269e15"
+              "reference": "8c94fd88cbc9f4ee8177a2b04e69532a2e01145c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/stimulus-bundle/zipball/257ef052bebe491d7c29e9a4a8009edb82269e15",
-                "reference": "257ef052bebe491d7c29e9a4a8009edb82269e15",
+              "url": "https://api.github.com/repos/symfony/stimulus-bundle/zipball/8c94fd88cbc9f4ee8177a2b04e69532a2e01145c",
+              "reference": "8c94fd88cbc9f4ee8177a2b04e69532a2e01145c",
                 "shasum": ""
             },
             "require": {
@@ -5680,7 +5680,7 @@
                 "twig/twig": "^2.15.3|^3.4.3"
             },
             "require-dev": {
-                "symfony/asset-mapper": "6.3.x-dev",
+              "symfony/asset-mapper": "^6.3",
                 "symfony/framework-bundle": "^5.4|^6.0",
                 "symfony/phpunit-bridge": "^5.4|^6.0",
                 "symfony/twig-bundle": "^5.4|^6.0",
@@ -5707,7 +5707,7 @@
                 "symfony-ux"
             ],
             "support": {
-                "source": "https://github.com/symfony/stimulus-bundle/tree/v2.10.0"
+              "source": "https://github.com/symfony/stimulus-bundle/tree/v2.11.0"
             },
             "funding": [
                 {
@@ -5723,7 +5723,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-06-29T19:46:37+00:00"
+          "time": "2023-08-24T16:25:14+00:00"
         },
         {
             "name": "symfony/stopwatch",
@@ -6253,6 +6253,86 @@
             "time": "2021-07-21T12:40:44+00:00"
         },
         {
+          "name": "symfony/ux-chartjs",
+          "version": "v2.11.0",
+          "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/ux-chartjs.git",
+            "reference": "49b7da8110de44433d71360688ecef3636288105"
+          },
+          "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/symfony/ux-chartjs/zipball/49b7da8110de44433d71360688ecef3636288105",
+            "reference": "49b7da8110de44433d71360688ecef3636288105",
+            "shasum": ""
+          },
+          "require": {
+            "php": ">=8.1",
+            "symfony/config": "^5.4|^6.0",
+            "symfony/dependency-injection": "^5.4|^6.0",
+            "symfony/http-kernel": "^5.4|^6.0",
+            "symfony/stimulus-bundle": "^2.9.1"
+          },
+          "conflict": {
+            "symfony/flex": "<1.13"
+          },
+          "require-dev": {
+            "symfony/framework-bundle": "^5.4|^6.0",
+            "symfony/phpunit-bridge": "^5.4|^6.0",
+            "symfony/twig-bundle": "^5.4|^6.0",
+            "symfony/var-dumper": "^5.4|^6.0"
+          },
+          "type": "symfony-bundle",
+          "extra": {
+            "thanks": {
+              "name": "symfony/ux",
+              "url": "https://github.com/symfony/ux"
+            }
+          },
+          "autoload": {
+            "psr-4": {
+              "Symfony\\UX\\Chartjs\\": "src/"
+            }
+          },
+          "notification-url": "https://packagist.org/downloads/",
+          "license": [
+            "MIT"
+          ],
+          "authors": [
+            {
+              "name": "Titouan Galopin",
+              "email": "galopintitouan@gmail.com"
+            },
+            {
+              "name": "Symfony Community",
+              "homepage": "https://symfony.com/contributors"
+            }
+          ],
+          "description": "Chart.js integration for Symfony",
+          "homepage": "https://symfony.com",
+          "keywords": [
+            "symfony-ux"
+          ],
+          "support": {
+            "source": "https://github.com/symfony/ux-chartjs/tree/v2.11.0"
+          },
+          "funding": [
+            {
+              "url": "https://symfony.com/sponsor",
+              "type": "custom"
+            },
+            {
+              "url": "https://github.com/fabpot",
+              "type": "github"
+            },
+            {
+              "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+              "type": "tidelift"
+            }
+          ],
+          "time": "2023-07-20T16:58:50+00:00"
+        },
+      {
             "name": "symfony/validator",
             "version": "v5.4",
             "source": {
