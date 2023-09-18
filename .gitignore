@@ -202,3 +202,10 @@ fabric.properties
 !./docker/mysql/mysql/
 !./docker/root/
 !./docker/sys/
+
+###> symfony/webpack-encore-bundle ###
+/node_modules/
+/public/build/
+npm-debug.log
+yarn-error.log
+###< symfony/webpack-encore-bundle ###

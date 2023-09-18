@@ -24,13 +24,13 @@ services:
     build:
       context: workspace
       args:
-        - CHANGE_SOURCE=${CHANGE_SOURCE}
-        - SHELL_OH_MY_ZSH=${SHELL_OH_MY_ZSH}
-        - SHELL_OH_MY_ZSH_AUTOSUGESTIONS=${SHELL_OH_MY_ZSH_AUTOSUGESTIONS}
-        - SHELL_OH_MY_ZSH_ALIASES=${SHELL_OH_MY_ZSH_ALIASES}
         - BASE_IMAGE_TAG_PREFIX=${WORKSPACE_BASE_IMAGE_TAG_PREFIX}
         - LARADOCK_PHP_VERSION=${PHP_VERSION}
         - INSTALL_SYMFONY=${WORKSPACE_INSTALL_SYMFONY}
+        - INSTALL_YARN=${WORKSPACE_INSTALL_YARN}
+        - YARN_VERSION=${WORKSPACE_YARN_VERSION}
+        - INSTALL_NODE=${WORKSPACE_INSTALL_NODE}
+        - NODE_VERSION=${WORKSPACE_NODE_VERSION}
         - http_proxy
         - https_proxy
         - no_proxy
@@ -44,9 +44,7 @@ services:
       - "${WORKSPACE_SSH_PORT}:22"
       - "${WORKSPACE_BROWSERSYNC_HOST_PORT}:3000"
       - "${WORKSPACE_BROWSERSYNC_UI_HOST_PORT}:3001"
-      - "${WORKSPACE_VUE_CLI_SERVE_HOST_PORT}:8080"
       - "8000:8000"
-      - "${WORKSPACE_ANGULAR_CLI_SERVE_HOST_PORT}:4200"
       - "${WORKSPACE_VITE_PORT}:5173"
     tty: true
     environment:
@@ -69,7 +67,6 @@ services:
     build:
       context: php-fpm
       args:
-        - CHANGE_SOURCE=${CHANGE_SOURCE}
         - PHP_VERSION=${PHP_VERSION}
         - PUID=${PHP_FPM_PUID}
         - PGID=${PHP_FPM_PGID}
