@@ -15,6 +15,7 @@ export default class extends Controller {
             direction: button.value
         }))
             .then((response) => {
+                console.log(response);
                 this.voteTotalTarget.innerHTML = response.data.votes;
             })
         ;
